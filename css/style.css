@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+.orange-text {
+  color: orange;
+}
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-top: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/* navbar style start  */
+.nav-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  text-align: center;
+  height: 100vh;
+  max-width: 100%;
+  /* background-attachment: fixed; */
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 12px 20px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: wheat;
+  margin-left: 10px;
+  line-height: 1.1;
+}
+.logo-title span {
+  color: orange;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu li {
+  display: block;
+  list-style: none;
+  padding: 10px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.menu li:hover {
+  border-bottom: 3px solid orange;
+}
+
+.active {
+  border-bottom: 3px solid orange;
+}
+
+.menu li a:hover {
+  font-weight: 600;
+  color: orange;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: wheat;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 15px;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+
+.nav-bg {
+  position: relative;
+}
+.bg-content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.bg-title {
+  font-size: 5rem;
+  padding: 8px;
+}
+.border_line {
+  margin: 0 auto;
+  height: 5px;
+  width: 80px;
+  background-color: silver;
+  border-radius: 15px;
+}
+.bg-subTitle {
+  padding: 10px;
+  color: wheat;
+}
+/* navbar style end  */
+/* There’s nothing more magical section start  */
+.magical-bg {
+  background-image: url("../images/magical-bg.png");
+}
+.magical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.magical-img img {
+  width: 100%;
+}
+
+.magical-title {
+  font-size: 50px;
+}
+.magical-p {
+  color: grey;
+  margin-top: 10px;
+}
+/* There’s nothing more magical section end  */
+
+/* Gallery section style start  */
+.ourGallery {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  padding: 20px;
+}
+.gallery img:nth-child(4),
+.gallery img:nth-child(5),
+.gallery img:nth-child(6) {
+  grid-column: span 1;
+}
+.glry-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glry-p {
+  font-weight: 500;
+  color: gray;
+  font-size: 24px;
+  padding: 0px 5px 5px 0px;
+  margin-top: 20px;
+}
+/* Gallery section style end  */
+
+/* memories section style start  */
+.memoris-bg {
+  background-image: url("../images/momories-bg.jpg");
+}
+.memoris-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 90px;
+}
+.memoris-title {
+  font-size: 34px;
+}
+
+.memoris-img img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.memoris-img img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  padding: 20px;
+}
+/* memories section style end */
+
+@media (max-width: 568px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+    background-color: aliceblue;
+  }
+  .bg-content {
+    left: 36%;
+  }
+  .logo-title {
+    font-size: 35px;
+    font-weight: 500;
+    color: wheat;
+    margin-left: 10px;
+  }
+  .magical {
+    display: flex;
+    flex-direction: column;
+  }
+  .magical-title {
+    font-size: 30px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 20px;
+  }
+  .glry-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .memoris-section {
+    flex-direction: column-reverse;
+    /* padding: 30px; */
+  }
+  .memoris-content {
+    width: 100%;
+  }
+  .memoris-img {
+    width: 100%;
+  }
+}
