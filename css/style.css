@@ -280,6 +280,67 @@
   padding: 20px;
 }
 /* memories section style end */
+/* Latest News and Updates style stat  */
+.latest-news-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.latest-news-img img {
+  width: 100%;
+}
+
+.latest-blog {
+  text-align: center;
+  font-size: 20px;
+  font-family: initial;
+}
+.latest-title {
+  text-align: center;
+}
+.latest-title {
+  font-size: 30px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+/* Latest News and Updates style end  */
+
+/* Never Miss a Post! start  */
+.never-miss-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.email-input {
+  padding: 10px 50px 10px 50px;
+}
+/* Never Miss a Post! end  */
+
+/* footer style start  */
+.footer-bg {
+  background-image: url("../images/footer_bg.jpg");
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.footer-text a {
+  display: block;
+  padding: 5px;
+}
+.footer-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* footer style end */
 
 @media (max-width: 568px) {
   .menu {
@@ -345,5 +406,22 @@
   }
   .memoris-img {
     width: 100%;
+  }
+  .latest-news-img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .footer-text a {
+    display: block;
+    padding: 5px;
   }
 }
