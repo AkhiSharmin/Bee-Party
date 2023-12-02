@@ -255,6 +255,9 @@
 /* Gallery section style end  */
 
 /* memories section style start  */
+.our-memories {
+  margin-top: 90px;
+}
 .memoris-bg {
   background-image: url("../images/momories-bg.jpg");
 }
@@ -271,16 +274,15 @@
 
 .memoris-img img {
   width: 100%;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.memoris-img img:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-  padding: 20px;
-}
 /* memories section style end */
 /* Latest News and Updates style stat  */
+
+.latest-section {
+  margin-top: 90px;
+}
+
 .latest-news-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -301,7 +303,7 @@
   text-align: center;
 }
 .latest-title {
-  font-size: 30px;
+  font-size: 34px;
   margin-top: 10px;
   padding-bottom: 20px;
   font-weight: 600;
@@ -415,13 +417,22 @@
   }
   .footer-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+    gap: 20px;
   }
   .footer-text a {
     display: block;
     padding: 5px;
+  }
+  .latest-section {
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .our-memories {
+    margin-top: 10px;
   }
 }
