@@ -74,6 +74,9 @@
   height: 100vh;
   max-width: 100%;
 }
+.orange-text {
+  color: orange;
+}
 
 .nav-bar {
   width: 100%;
@@ -125,7 +128,7 @@
 }
 
 .menu li a:hover {
-  font-weight: 600;
+  font-weight: 800;
   color: orange;
 }
 
@@ -194,6 +197,89 @@
 
 /* navbar style end  */
 
+/* about style start  */
+.about-Section {
+  /* margin-top: 50px; */
+  background-color: aliceblue;
+  padding: 80px;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px 1px rgba(238, 63, 0, 0.8);
+}
+.about-content {
+  padding: 10px 30px 10px 30px;
+}
+.about-text-category {
+  padding: 0px 8px 0px 8px;
+}
+.about-text {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.person-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+.about-text-p {
+  color: gray;
+  padding-bottom: 30px;
+}
+.aboutText {
+  color: gray;
+}
+/* about style end */
+
+/* happy kid start  */
+.happy-kid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(238, 63, 0, 0.8);
+}
+.kid-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+.kid-p {
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+/* happy kid end */
+
+/* footer style start  */
+.footer-bg {
+  background-image: url("../images/footer_bg.jpg");
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.footer-text a {
+  display: block;
+  padding: 5px;
+}
+.footer-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* footer style end */
+
 @media (max-width: 568px) {
   .menu {
     flex-direction: column;
@@ -225,9 +311,6 @@
     right: 0;
     background-color: orangered;
   }
-  .bg-content {
-    left: 36%;
-  }
   .logo-title {
     font-size: 35px;
     font-weight: 500;
@@ -240,5 +323,39 @@
   .menu li a:hover {
     font-weight: 600;
     color: orange;
+  }
+  .about-Section {
+    margin-top: 30px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    align-items: center;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .happy-kid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    gap: 15px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-text a {
+    display: block;
+    padding: 5px;
   }
 }
