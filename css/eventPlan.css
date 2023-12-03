@@ -314,14 +314,50 @@
 .even-text {
   text-align: center;
   padding-top: 40px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-family: vidaloka, serif;
+}
+.even-title {
+  font-size: 48px;
 }
 .even-p {
   /* padding: 10px; */
   margin-top: 10px;
 }
 /* even style end  */
+
+/* choose holiday start  */
+.holiday-text {
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+.holiday-title {
+  font-size: 48px;
+  color: orange;
+}
+.choose-holiday {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 60px;
+}
+.choose-day,
+.choose-hours {
+  padding: 50px 10px 50px 10px;
+  box-shadow: 10px 10px 5px wheat;
+  text-align: center;
+}
+.choose-text-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-amount {
+  font-size: 30px;
+  color: orange;
+}
+/* choose holiday end  */
+
 /* footer style start  */
 .footer-bg {
   background-image: url("../images/footer_bg.jpg");
@@ -399,5 +435,26 @@
   .footer-text a {
     display: block;
     padding: 5px;
+  }
+  .ep-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    padding: 40px;
+  }
+  .ev-content img {
+    width: 100%;
+  }
+  .holiday-text {
+    font-size: 28px;
+    color: orange;
+    padding: 20px 5px 20px 5px;
+  }
+  .choose-holiday {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
   }
 }
